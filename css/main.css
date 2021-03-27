@@ -1,0 +1,100 @@
+/* Base Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slider{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  z-index: -1;
+}
+
+nav{
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: #000;
+  align-items: center;
+}
+
+#logo {
+  grid-column: 2/3;
+  font-size: 24px;
+}
+
+/* --DONT HAVE-- .hamburger{
+  justify-self: end;
+} */
+
+section{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.hero video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .headline {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-size: 100px;
+  transform: translate(-20%, -70%);
+  color: white;
+  z-index: 3;
+} */
+
+.hero::after{
+  content: "";
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  top: 0;
+}
+
+.logo2 {
+  width: 110px;
+  position: fixed;
+  right: 90%;
+  margin-top: 1px;
+}
+
+span {
+  font-size: .75em;
+}
+
+/* <--------- media queries -----------> */
+
+
+/* @media (min-width: 760px) {
+    #MCMXCVI {
+      width: 100%;
+      height: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    #MCMXCVI {
+      width: auto;
+      height: 100%;
+    }
+} */

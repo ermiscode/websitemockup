@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+} */
+
+body {
+  font-family: "Dosis", sans-serif;
+}
+
+.logo2 {
+  width: 110px;
+  position: fixed;
+  right: 90%;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.container {
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, .4),
+    rgba(148, 48, 48, .2),
+    rgba(167, 67, 67, .4)
+    ),
+  /* url(pictures/architect.jpg) center no-repeat;
+  background-size: cover; */
+}
+
+.navbar{
+  width: 100%;
+  height: 20%;
+  background-color: #0;
+  position: fixed;
+  top: -500px;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  transition: top .8s cubic-bezier(1, 0, 0, 1);
+}
+
+.change {
+  top: 0;
+}
+
+.hamburger-menu {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #eee;
+  transition: all 0.8s;
+  border: .2px solid black;
+}
+
+.change .line-1 {
+  transform: rotateZ(-45deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(45deg) translate(-8px, -6px);;
+}
+
+.nav-list {
+  border: none;
+  list-style: none;
+  margin: 20px;
+  padding:10px;
+  text-align: center;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 50px;
+  display: inline;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 12px;
+  color: #000;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 0;
+}
+
+.nav-link::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: magenta;
+  position: absolute;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.nav-link::after {
+  bottom: 0;
+  transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.about-section{
+  background: url(../about_pic.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: #eee;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.inner-container{
+  width: 45%;
+  float: right;
+  background-color: #eee;
+  padding: 130px;
+}
+
+.inner-container h1{
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text{
+  font-size: 13px;
+  color: black;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.skills{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+nav{
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: #000;
+  align-items: center;
+}
+
+#logo {
+  grid-column: 2/3;
+  font-size: 24px;
+}
+
+/* --DONT HAVE-- .hamburger{
+  justify-self: end;
+} */
+
+section{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+      padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-section{
+      background-size: 100%;
+      padding: 100px 40px;
+    }
+    .inner-container{
+      width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-section{
+      padding: 0;
+    }
+    .inner-container{
+      padding: 60px;
+    }
+}

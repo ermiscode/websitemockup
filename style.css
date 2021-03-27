@@ -1,0 +1,189 @@
+/* Base Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainheader a {
+  color: white;
+  text-align: right;
+  padding: 5px;
+  font-size: 15px;
+  line-hight: 1.6;
+  width: 50%;
+  /* border: 1px solid red */
+}
+
+.title {
+  font-size: 40px;
+  text-align: left;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-weight: 90;
+  color: white;
+  letter-spacing: .5rem;
+  margin: auto;
+  margin-left: 20px;
+}
+
+
+/* <--------- NAV -----------> */
+
+.main-nav {
+  /* background: burlywood; */
+  width: 100%;
+  min-height: 30px;
+  padding: 10px;
+  text-align: right;
+  text-align: -webkit-right;
+}
+
+.nav {
+  margin: 0 auto;
+  margin-left: 0;
+  padding-right: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav li {
+  padding: 20px 5px 5px 5px;
+}
+
+
+.nav a:hover {
+  color: magenta;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: grey;
+}
+
+/* <--------- Social Icons -----------> */
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons li {
+  font-size: .95em;
+  display: block;
+  padding: 10px 15px;
+}
+
+.link {
+  /* text-align: center;
+	padding: 15px;
+	margin-top: 50px;
+  width: 50px;
+  height: 50px;
+	background: #fff;
+	border-radius: 50%;
+  border: solid 1px red; */
+}
+
+.twitter {
+  background-image: url(../images/social/Twitter_Social_Icon_Circle_White.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  transition: all .25s;
+}
+
+.instagram {
+  background-image: url(../images/social/instagram-logos-png-images-free-download-2.png);
+  background-repeat: no-repeat;
+  /* background-color: white; */
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+}
+
+.youtube {
+  background-image: url(../images/social/395070.png);
+  background-repeat: no-repeat;
+  /* background-color: white; */
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  transition: all .25s;
+}
+
+.facebook {
+  background-image: url(../images/social/facebook.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  transition: all .25s;
+}
+
+.linkedin {
+  background-image: url(../images/social/LI-In-Bug.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  transition: all .25s;
+}
+
+/* <--------- footer -----------> */
+
+.mainfooter {
+  color: gray;
+  margin: auto;
+  /* color: white; */
+  margin-left: 30px;
+  padding-bottom: 20px;
+}
+
+.mainfooter span {
+  font-size: .7em;
+}
+
+/* <--------- media queries -----------> */
+
+
+@media (min-width: 760px) {
+    #MCMXCVI {
+      width: 100%;
+      height: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    #MCMXCVI {
+      width: auto;
+      height: 100%;
+    }
+}
